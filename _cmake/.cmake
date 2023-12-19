@@ -1,0 +1,29 @@
+set(SDK_PATH "C:/Users/admin/SimplicityStudio/SDKs/gecko_sdk")
+set(COPIED_SDK_PATH "")
+
+add_library(slc_ OBJECT
+    "../autogen/zap-cli.c"
+    "../autogen/zap-cluster-command-parser.c"
+    "../autogen/zap-event.c"
+)
+
+target_include_directories(slc_ PUBLIC
+   "../autogen"
+)
+
+target_compile_definitions(slc_ PUBLIC
+)
+
+target_link_libraries(slc_ PUBLIC
+    "-Wl,--start-group"
+    "-Wl,--end-group"
+)
+target_compile_options(slc_ PUBLIC
+)
+
+set(post_build_command )
+
+target_link_options(slc_ INTERFACE
+)
+
+# BEGIN_SIMPLICITY_STUDIO_METADATA=eJy9WPuPokgQ/lcMP14UaHwhcWdzcdzEy0w0Pja5WzYGoUf75BW6mdld4/9+xVNUBhdOJplgqK6u7+vuqq6POXCz+fSv8Wi5nk+nS07hDio3Hz/9uZx8Ha+zQyqnqBzPq9yRa6ZzFtPVfDRewLTh5x+W2XjFHiWO/UnlEC+qXAPbumMQewuG1fJLS1a5zw+qp9pD13P+xTprwK+LPfZzocMveMV2lQvdGo3hi2Ma2GvYmhUMaz5ztthOhwMHYuJk+JfmtnST8DpA+x4BSzCqCCNFWFGgJmiGRWxhQSzXJDoBWOYbxBFeu+s3x9tTV9Ox8A/ZbjB+Itsd67YsDfxjVCETXigi4FOGvZbuWJZmGy1X8wC7Xk7vIZanuftwmrtimrEzZZ6vM1orv2uo28Q+gNBNIvYL2dbLI0EooIFtbWNio0Wg5AFwm7Cv9cgKQYvIvmKb1VmSKcBNEnXuTgJQQILUmsHkVvK6Hql3D1KAAhLM2WO71jw9IRTR+OniWknE8RMKQyFqrslrVOa+pzFo4QmxR/yi+SY05IapbbB5ZoELnI0cy4UJG2ICJxgFM3McU98Bes4YNfaXVihZnhKITnkY5SnTdHj6IAuUDt/mRX6Nul1JRv2ejLKN38BU94gbkH0YCtm3ZHlnC4p0hxALjPANhMxi8jx7mowmy7/Xi+XqcTJdP08fV0+hpPkGUsjDlvOKDRA/L5pJcVPlNj4xGbHHP6CdASiMfPt+Mi8c39Mja6pWsrqheWl9r3P/nuPu2vG6ieV75I4k9/zFQOE1e+mb3Hy59mt/ksckrdoL+6mOLgfi3A6OwnIM38ShXk10pvL8HBobIFJtqsTWT6qqcjvGXEUQ3t7ekiyExQmUCrPIice64+HAsxGfcTgNtjcyEiN893U+wuUpZr7La1CQ+/Uv3RylSeh4PL/V9XCWa1hnYR5USMgwa2GP4awhYSnUF4Mzj/D4P4KnEPuleZws7CHckZggLD2Ie/yem+Czx+dUsKvqpWQHS65oD3FPwh3c4guixMKD4AWCP4YAJ/iLhf8JJyP9zxwTd7gtT86ZigNjem7RdgcmiISBGTZSo/D7cd+r2Y+C2tUBdX1v1IVRU+zk7rp76MLb7/5oyf1ZU+Q6OJN6zjTtAnePfOoj9w8dd6KqgU+q7Nwc9gUDzzS2g9dIItJQAypJMxDSO/IUNKN4Ykt+U5hPZ+P5chIKn0Mg1aB7HoKWQzXQPwvm6PuvmkeCSqCBWQkeh2PwPIa9J5WFpSYG/0yCTkCw8QV2ksaqK92luJM10z4RLj+AyNdWjke2xNbM1C20xi0ODKgZ6E2bQSHAW0tCIkjLXhe1j80qsAXirRwT1JNQR0YDUbojkV2lLREHXRH1EepVYpKrPstRkPqdNpKQPPgfBKqtHfVQV5JEJFc7hax6Lo3c63ckuVMtEW/J87JkBp2O3O725GpkMvq/HHBbDkpAlqujVko3sT/oi/KgVynfSNVUE5HUlwayJFZBzX4elbxoRGmARFGW+lVwzz6/SmdVV0Y9sSOiSshxVy2N2+kMum240XrwNXT8D20HpNg==END_SIMPLICITY_STUDIO_METADATA

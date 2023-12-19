@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "ota-client-policy-config.h": "c",
+        "private_parse.h": "c",
+        "app.h": "c",
+        "zap-id.h": "c"
+    }
+}

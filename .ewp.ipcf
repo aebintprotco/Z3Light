@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iarProjectConnection name="Simplicity Configurator" version="1.8">
+  <files>
+    <group name="autogen">
+      <path>autogen\zap-cli.c</path>
+      <path>autogen\zap-cluster-command-parser.c</path>
+      <path>autogen\zap-cluster-command-parser.h</path>
+      <path>autogen\zap-command-structs.h</path>
+      <path>autogen\zap-command.h</path>
+      <path>autogen\zap-config.h</path>
+      <path>autogen\zap-enabled-incoming-commands.h</path>
+      <path>autogen\zap-event.c</path>
+      <path>autogen\zap-event.h</path>
+      <path>autogen\zap-id.h</path>
+      <path>autogen\zap-print.h</path>
+      <path>autogen\zap-tokens.h</path>
+      <path>autogen\zap-type.h</path>
+    </group>
+  </files>
+  <SimplicityStudioMetadata>
+    <metadata>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</metadata>
+  </SimplicityStudioMetadata>
+</iarProjectConnection>
